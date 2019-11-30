@@ -17,7 +17,7 @@
     background-image: url(./img/main-bg.png);
     }
 
-.header {
+.header {position: fixed;
     height: 148px;
     width: 100%;
 }
@@ -228,8 +228,11 @@ margin-bottom: 50px;
 }
 
 .scroll {
-    position: absolute;
-    top: 925px;
-    left: 730px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    z-index: 100000000;
     cursor: pointer;
     }
+
+html {scroll-behavior: smooth;}
